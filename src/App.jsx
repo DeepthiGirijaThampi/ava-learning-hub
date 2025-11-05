@@ -4,6 +4,9 @@ import About from "./components/pages/About";
 import Profile from "./components/pages/Profile";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
+import Reflections from "./components/pages/Reflections";
+import Subjects from "./components/pages/Subjects";
+import Units from "./components/pages/Units";
 function App() {
   
 
@@ -14,6 +17,9 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/profile" element={<Profile/>}/>
+        <Route path="/reflections" element={<Reflections/>}/>
+        <Route path="/subjects" element={<Subjects/>}/>
+        <Route path="/units" element={<Units/>}/>
         <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
       <Footer></Footer>
