@@ -1,4 +1,9 @@
+import CustomButton from "../common/CustomButton";
+import './learning.css';
 export default function Reflections(){
+    function handleAddReflections(){
+        console.log("Added Reflections");
+    }
     return(
       
         <main className="page-container">
@@ -11,7 +16,7 @@ export default function Reflections(){
             <p>No reflections yet...</p>
         </div>
         <div style={{textAlign:"center"}}>
-            <button>Add Reflections</button>
+            <CustomButton text="Add Reflections" onClick={handleAddReflections}/>
         </div>
         </main>
       
