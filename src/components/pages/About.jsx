@@ -1,7 +1,7 @@
-
+import '/src/components/pages/about.css';
 export default function About(){
     return(
-        <main >
+        <main className='about-page' >
          <section >
          <h2>About Ava’s Learning Hub</h2>
          <p><em>Created by <strong >Deepthi Girija Thampi</strong>, as part of a solo project to inspire young learners like Ava 🧡</em></p>
