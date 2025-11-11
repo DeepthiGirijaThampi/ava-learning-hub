@@ -7,6 +7,7 @@ import Footer from "./components/common/Footer";
 import Reflections from "./components/pages/Reflections";
 import Subjects from "./components/pages/Subjects";
 import Units from "./components/pages/Units";
+import './App.css'
 function App() {
   
 
