@@ -13,7 +13,6 @@
     line-height: 1.6;
   }
   .about-page h2 {
-    /* color: #6a1b9a;  */
     color:var(--white-color);
     margin-bottom: 1rem;
   }

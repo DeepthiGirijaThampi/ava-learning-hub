@@ -1,5 +1,7 @@
 import { useNavigate ,Link } from "react-router";
+import '../pages/home.css';
 export default function Home(){
+    const navigate = useNavigate();
     return(
         <main className="home-page">
         <div className="welcome">

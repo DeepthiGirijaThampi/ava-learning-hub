@@ -1,0 +1,33 @@
+
+
+.feature-card {
+    background-color: #f3f4f6; 
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #111827; 
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .feature-card:hover {
+    transform: scale(1.02);
+    background-color: #e0f2fe; 
+    cursor: pointer;
+  }
+
+  .start-learning-button{
+    background-color: #f3f4f6; 
+    border: 2px solid #d1d5db; 
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: purple;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.754);
+    transition: transform 0.2s ease;
+  }
