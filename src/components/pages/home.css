@@ -1,4 +1,6 @@
-
+/* .features{
+  background-image: url('../../assets/books-one.jpg')
+} */
 
 .feature-card {
     background-color: #f3f4f6; 
@@ -19,7 +21,7 @@
     cursor: pointer;
   }
 
-  .start-learning-button{
+  .get-started-button{
     background-color: #f3f4f6; 
     border: 2px solid #d1d5db; 
     border-radius: 12px;
@@ -30,4 +32,10 @@
     color: purple;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.754);
     transition: transform 0.2s ease;
+  }
+   
+  .get-started-button:hover {
+    transform: scale(1.02);
+    background-color: #e0f2fe; 
+    cursor: pointer;
   }

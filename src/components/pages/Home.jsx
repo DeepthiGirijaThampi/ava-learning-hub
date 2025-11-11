@@ -15,7 +15,7 @@ export default function Home(){
         <Link to={"/profile"}><div className="feature-card">📊 Celebrate Progress</div></Link>
          <div className="feature-card">🌍 Coming soon: multi-user!</div>
         </section>
-        <button onClick={() => navigate("/subjects")} className="start-learning-button">Get Started</button>
+        <button onClick={() => navigate("/subjects")} className="get-started-button">Get Started</button>
         </main>
     )
 }
