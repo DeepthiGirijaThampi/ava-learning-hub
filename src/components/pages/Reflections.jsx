@@ -1,8 +1,8 @@
 export default function Reflections(){
     return(
       
-        <main>
-        <h1 style={{display:"flex",justifyContent:"center"}}>Reflections Page</h1>
+        <main className="page-container">
+        <h1 className="page-heading">Reflections Page</h1>
         <p style={{textAlign:"center"}}>
             Write your thoughts about what you learned today ✍
         </p>
