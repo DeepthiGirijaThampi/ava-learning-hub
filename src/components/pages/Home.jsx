@@ -9,8 +9,8 @@ export default function Home(){
          </div>
          <section className="features">
         <Link to={"/subjects"}><div className="feature-card">📚 Track Subjects</div></Link>
-        <Link to={"/reflections"}><div className="feature-card">✍️ Reflect on Learning</div></Link>
-        <Link to={"/profile"}><div className="feature-card">📈 Celebrate Progress</div></Link>
+        <Link to={"/reflections"}><div className="feature-card">✍ Reflect on Learning</div></Link>
+        <Link to={"/profile"}><div className="feature-card">📊 Celebrate Progress</div></Link>
          <div className="feature-card">🌍 Coming soon: multi-user!</div>
         </section>
         <button onClick={() => navigate("/subjects")} className="start-learning-button">Get Started</button>
