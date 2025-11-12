@@ -1,0 +1,52 @@
+:root {
+    --primary-color:purple;
+    --text-color: #444;
+    --green:rgb(39, 124, 34);
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+ 
+  body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  button {
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--green);
+    color: white;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .nav-menu .link {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu .link:hover {
+    color: rgb(99, 37, 161);
+  }
+  
