@@ -1,0 +1,36 @@
+:root{
+--white-color: #fdf5f5;
+--shading-color :rgba(0, 0, 0, 0.849);
+}
+
+  .about-page h2 {
+    color:var(--white-color);
+    margin-bottom: 1rem;
+  }
+  .about-page {
+    position: relative;
+    background-image: url('../../assets/books-one.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color:var(--white-color);
+    text-shadow: 2px 2px 5px var(--shading-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center;
+    padding: 2rem;
+    max-width: 700px;
+    line-height: 2;
+    font-size: 1.1rem;
+    margin: 0 auto; */
+  }
+
+  .about-section{
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin: 0 auto;
+  }

@@ -1,12 +1,17 @@
 import { Link } from "react-router";
+import './learning.css';
+import CustomButton from "../common/CustomButton";
 export default function Subjects(){
+    function handleAddSubject(){
+        console.log("Added Subject");
+    }
     return(
      
-        <main>
-        <h1 style={{display:"flex",justifyContent:"center"}}>Subjects Page</h1>
+        <main className="page-container">
+        <h1 className="page-heading" style={{display:"flex",justifyContent:"center"}}>Subjects Page</h1>
              {/* Step 1: Add Subject Button */}
              <div style={{ textAlign: "center", margin: "1rem" }}>
-              <button>Add Subject</button>
+              <CustomButton text={"Add Subject"} onClick={handleAddSubject}/>
              </div>
 
              <p style={{textAlign:"center"}}>Choose a Subject</p>

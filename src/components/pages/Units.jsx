@@ -1,11 +1,15 @@
+import CustomButton from "../common/CustomButton";
 
 export default function Units(){
+    function handleAddUnit(){
+        console.log("Added Unit")
+    }
     return(
-        <main>
-             <h1 style={{display:"flex",justifyContent:"center"}}>Units Page</h1>
+        <main className="page-container">
+             <h1 className="page-heading">Units Page</h1>
              {/* Step 1: Add Unit Button */}
              <div style={{ textAlign: "center", margin: "1rem" }}>
-              <button>Add Unit</button>
+              <CustomButton text="Add Unit" onClick={handleAddUnit}/>
              </div>
              {/* Step 2: Placeholder if no units */}
              <p style={{ textAlign: "center", color: "gray" }}>
