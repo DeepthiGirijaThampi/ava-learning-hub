@@ -20,7 +20,7 @@ function App() {
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/reflections" element={<Reflections/>}/>
         <Route path="/subjects" element={<Subjects/>}/>
-        <Route path="/units" element={<Units/>}/>
+        <Route path="/units/:subjectId" element={<Units/>}/>
         <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
       <Footer></Footer>

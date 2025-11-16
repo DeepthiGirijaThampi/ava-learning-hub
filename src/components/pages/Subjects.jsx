@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import CustomButton from "../common/CustomButton";
 import './learning.css';
 import { useEffect, useState } from "react";
@@ -7,8 +6,6 @@ export default function Subjects(){
     //load the subjects from local storage 
     const loadSubjects = ()=>{
         const saved = localStorage.getItem('subjects');
-        console.log(saved);//need to be removed
-        console.log(JSON.parse(saved));
         return saved ? JSON.parse(saved) : [];
     }
 
