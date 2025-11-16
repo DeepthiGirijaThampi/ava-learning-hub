@@ -33,4 +33,46 @@
   .link:hover {
     text-decoration: underline;
   }
+  /* subject form */
+  .subject-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color:  #f8f8f8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .subject-form input,.subject-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.subject-form input:focus,.subject-form textarea:focus {
+  outline: none;
+  border-color: #6a1b9a;
+  box-shadow: 0 0 5px rgba(106, 27, 154, 0.4);
+}
+
+/* the subject card */
+.subjects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
   
+  .subject-card {
+    border: 1px solid #ccc;
+    color: purple;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+  }
