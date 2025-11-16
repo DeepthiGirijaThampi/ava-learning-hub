@@ -1,0 +1,19 @@
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    position: relative;
+  }
+
+  /* Regular full nav shown on desktop */
+  .menu-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .hamburger {
+    display: none; 
+  }
+ 

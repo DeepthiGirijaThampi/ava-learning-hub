@@ -49,8 +49,11 @@
   .nav-menu .link:hover {
     color: rgb(99, 37, 161);
   }
-  
-  @import url('./App.css'); 
+  /* Always hide the hamburger on normal screens by default */
+  .hamburger {
+    display: none; /* Hide by default */
+  }
+ @import url('./App.css'); 
  @import url('./components/pages/about.css');
  @import url('./components/pages/home.css');
  @import url('./components/pages/learning.css');
@@ -99,6 +102,29 @@
 
         font-size: x-small;
        }
+    .hamburger {
+        display: block; 
+      }
+    /* Always hide the menu-links on small screens by default */
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+     /* When menuOpen is true, add this class */
+    .menu-links.show {
+    display: flex;
+    flex-direction: column;
+   
+    }
+    #links{
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-top: 0px;
+      padding-bottom:0px ;
+    }
   }
 
   @media screen and (max-width: 1366px) {
