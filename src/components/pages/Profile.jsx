@@ -21,8 +21,12 @@ export default function Profile(){
         console.log("Competde units : ",completed);
         const progress = total === 0? 0: Math.round((completed/total)*100);
         console.log(`Progress ->${subject.name}  ${progress}` )
+        return{
+            ...subject,
+            progress
+        }
     })
-
+   
     return(
  
       
@@ -56,7 +60,7 @@ export default function Profile(){
          <div className="vertical-divider"></div>
          <section className="profile-right">
              {/* Progress bars for each subject */}
-         {subjects.map((subject, index) => (
+         {subjectProgress.map((subject, index) => (
          <div className='progress-container-div' key={index} style={{ marginBottom: "2rem" }}>
             <h3 className='subject-name-header' style={{color:"purple"}}>{subject.name}</h3>
                 <div className='progress-bar-div'>
