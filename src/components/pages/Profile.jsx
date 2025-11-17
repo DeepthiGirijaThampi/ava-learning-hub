@@ -6,6 +6,23 @@ export default function Profile(){
         {name : "Science", progress: 70},
         {name : "Reading", progress: 85}
     ];
+     // Get subjects from localStorage (localStorage.getItem('subjects'))
+     const storedSubjects = JSON.parse(localStorage.getItem('subjects'))||[];
+     console.log("Stored Subjects - Profile Page:", storedSubjects);
+	// 	Get units from localStorage for each subject
+    //count total units and completed ones 
+    //show in progress bar
+    const subjectProgress = storedSubjects.map( (subject)=>{
+        const units = JSON.parse(localStorage.getItem(`units-${subject.id}`))||[];
+        console.log("Units-> Profile page",units)
+        const total = units.length;
+        console.log("total = ",total)
+        const completed = units.filter(unit => unit.completed).length;
+        console.log("Competde units : ",completed);
+        const progress = total === 0? 0: Math.round((completed/total)*100);
+        console.log(`Progress ->${subject.name}  ${progress}` )
+    })
+
     return(
  
       

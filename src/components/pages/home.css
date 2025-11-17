@@ -36,6 +36,6 @@
    
   .get-started-button:hover {
     transform: scale(1.02);
-    background-color: #e0f2fe; 
+    background-color: rgb(39, 124, 34);
     cursor: pointer;
   }
