@@ -2,7 +2,7 @@ import CustomButton from '../common/CustomButton';
 import './learning.css';
 import { useParams,useLocation } from 'react-router';
 import { useEffect, useState } from 'react';
-
+import './units.css'
 export default function Units() {
 const { subjectId } = useParams();
  //receive the subject info here from SubjectCard 
@@ -165,11 +165,12 @@ return (
     )}
 
     {units.length > 0 && (
-        <ul style={{ textAlign: 'center', listStyleType:"none" }}>
+        <div className='units-container'>
+        <ul className="units-list" style={{ textAlign: 'center', listStyleType:"none" }}>
         {units.map((unit) => (
         
-            <li key={unit.id} >
-            <label>
+            <li key={unit.id} className='unit-item' >
+            <label className='unit-label'>
                 <input
                 type="checkbox"
                 checked={unit.completed}
@@ -182,6 +183,7 @@ return (
             
         ))}
         </ul>
+        </div>
     )}
 
     {/* Step 5: Link back */}
