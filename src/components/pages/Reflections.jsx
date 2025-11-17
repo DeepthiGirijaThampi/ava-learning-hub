@@ -75,10 +75,15 @@ export default function Reflections(){
         )
 
         }
-        {/* Add Reflection Button */}
-        <div style={{textAlign:"center"}}>
+        {/* Add Reflection Button only when form is hidden */}
+        {!showForm && (
+            <div style={{textAlign:"center"}}>
             <CustomButton text="Add Reflections" onClick={()=>setShowForm(true)}/>
-        </div>
+            </div>
+        )
+            
+        }
+        
         {reflections.length === 0 ? 
         (<div style={{textAlign:"center",margin:"1rem",color:"gray"}}>
             <p>No reflections yet...</p>
