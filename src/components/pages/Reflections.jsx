@@ -43,6 +43,12 @@ export default function Reflections(){
         setSubject('');
         setShowForm(false);
     }
+    //handler for deleting reflections
+    const handleDeleteReflection = (id)=>{
+        const updatedReflection = reflections.filter(reflection => reflection.id !== id);
+        setReflections(updatedReflection);
+    }
+    //rendering
     return(
       
         <main className="page-container">
@@ -93,7 +99,8 @@ export default function Reflections(){
         <div className="reflection-display" key={reflection.id}>
             <h3>{reflection.subject}</h3>
             <p>{reflection.text}</p>
-            <small>{reflection.date}</small>
+            <small>{reflection.date}</small><br></br>
+            <CustomButton text="Delete" onClick={()=>handleDeleteReflection(reflection.id)}/>
         </div>
         )))}
         </main>

@@ -170,7 +170,7 @@ return (
         {units.map((unit) => (
         
             <li key={unit.id} className='unit-item' >
-            <label className='unit-label'>
+            <label className={`unit-label ${unit.completed ? "completed" : ""}`}>
                 <input
                 type="checkbox"
                 checked={unit.completed}
