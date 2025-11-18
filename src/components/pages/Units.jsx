@@ -69,7 +69,7 @@ const handleAddUnits =()=> {
     setShowUnitForm(true)
 }
 //submit handler for saving the uinit
-function handleSaveUnit(e) {
+const handleSaveUnit = (e)=> {
     e.preventDefault();
     const newUnit = {
     id: Date.now(),
@@ -83,7 +83,7 @@ function handleSaveUnit(e) {
     setShowUnitForm(false);
 }
 // for the checkbox toggle to mark completion of unit
-function toggleUnitComplete(id) {
+const toggleUnitComplete =(id) =>{
     const updated = units.map((unit) =>
     unit.id === id ? { ...unit, completed: !unit.completed } : unit
     );
