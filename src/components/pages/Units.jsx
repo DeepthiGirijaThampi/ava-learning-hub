@@ -103,7 +103,8 @@ return (
 
     {/* Step 2: Show input box if they clicked on Add Units */}
     {showLimitInput && (
-        <form onSubmit={handleLimitSubmit} style={{ textAlign: 'center', margin: '1rem' }}>
+        <div className="add-units-form">
+        <form onSubmit={handleLimitSubmit} >
         <label>
             How many units?{' '}
             <input
@@ -117,6 +118,7 @@ return (
         <CustomButton text="Confirm" type="submit" />
         {error && <p style={{ color: 'red' }}>{error}</p>}
         </form>
+        </div>
     )}
 
     {/* Step 3: Real Add Unit button */}
@@ -136,6 +138,7 @@ return (
   
     {/* on clicking the real Add units generate the form and save it */}
     {showUnitForm && (
+    <div className="add-units-form">
     <form onSubmit={handleSaveUnit} style={{ textAlign: 'center', marginBottom: '1rem' }}>
     <div>
     <input
@@ -158,6 +161,7 @@ return (
     </div>
     <CustomButton text="Save Unit" type="submit" />
     </form>
+    </div>
     )}
     {/* Step 4: Show list of units */}
     {unitLimit && units.length === 0 && (
