@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CustomButton from "../common/CustomButton";
 import './learning.css';
+import './reflections.css';
 export default function Reflections(){
     //Load saved reflections from localStorage
     const loadReflections = ()=> {
@@ -61,7 +62,7 @@ export default function Reflections(){
         {/* diaplay saved reflections  */}
         {/* show form when reflection is clicked so need to call handleAddReflections in the form onSubmit and on onClick of button need to add a set function for showing the form*/}
         {showForm && (
-            <form onSubmit={handleAddReflections}>
+            <form className="reflections-form" onSubmit={handleAddReflections}>
                 <textarea 
                     rows={4}
                     placeholder='Your thoughts'
@@ -70,7 +71,7 @@ export default function Reflections(){
                     required
                 /><br></br>
                 <select value={subject} onChange={e=>setSubject(e.target.value)}>
-                    <option value={""}>--Select Subject--</option>
+                    <option value={""}>--Optional : Select Subject--</option>
                     {subjectList.map((sub)=>(
                         <option key={sub.id} value={sub.name}>{sub.name}</option>
                     ))
@@ -89,7 +90,7 @@ export default function Reflections(){
         )
             
         }
-        
+       <div className="reflections-container">
         {reflections.length === 0 ? 
         (<div style={{textAlign:"center",margin:"1rem",color:"gray"}}>
             <p>No reflections yet...</p>
@@ -103,6 +104,7 @@ export default function Reflections(){
             <CustomButton text="Delete" onClick={()=>handleDeleteReflection(reflection.id)}/>
         </div>
         )))}
+      </div> 
         </main>
       
     )
