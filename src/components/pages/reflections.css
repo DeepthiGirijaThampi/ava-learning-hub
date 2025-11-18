@@ -44,3 +44,31 @@
     border-color: #6a1b9a;
     box-shadow: 0 0 5px rgba(106, 27, 154, 0.4);
 }
+
+@media screen and (max-width: 1366px) {
+    .reflection-display {
+      width: 250px;
+      padding: 30px;
+      border-width: 12px;
+    }
+    .reflections-form {
+      padding: 1.5rem;
+      max-width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .reflection-display {
+      width: 80%;
+      padding: 1rem;
+      margin: 10px auto;
+    }
+    .reflections-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .reflections-form {
+      max-width: 90%;
+      padding: 1rem;
+    }
+  }

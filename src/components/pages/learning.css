@@ -68,11 +68,39 @@
   }
   
   .subject-card {
-    border: 1px solid #ccc;
+    border: 10px solid #ccc;
     color: purple;
     padding: 1rem;
     width: 200px;
     text-align: center;
     border-radius: 8px;
     background-color: #f8f8f8;
+  }
+
+  @media screen and (max-width: 1366px) {
+    .subject-card {
+      width: 250px;
+      padding: 30px;
+      border-width: 12px;
+    }
+    .subject-form {
+      padding: 1.5rem;
+      max-width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .subject-card {
+      width: 80%;
+      padding: 1rem;
+      margin: 10px auto;
+    }
+    .subjects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .subject-card {
+      max-width: 90%;
+      padding: 1rem;
+    }
   }
