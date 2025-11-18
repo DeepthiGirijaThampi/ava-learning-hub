@@ -1,0 +1,55 @@
+/* Contacts.css */
+.contact {
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to bottom right, #f0f4f8, #e6eaf0); */
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  form {
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #6a1b9a;
+    box-shadow: 0 0 0 2px rgba(106, 27, 154, 0.2);
+  }
+
+  .thankyou {
+    padding-left: 100px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }
+ 

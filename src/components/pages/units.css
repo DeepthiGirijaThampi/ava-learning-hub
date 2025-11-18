@@ -1,3 +1,4 @@
+/* units contaiter div*/
 .units-container {
     display: flex;
     justify-content: center;
@@ -37,11 +38,12 @@
     vertical-align: middle;
     accent-color: #3da411; 
   }
-.unit-label:hover {
+  /* hover effect */
+/* .unit-label:hover {
     background-color: #f2f2f2;
     border-radius: 6px;
     padding: 0.3rem;
-}
+} */
 /* .unit-label.completed {
     text-decoration: line-through;
     color: gray;

@@ -19,6 +19,7 @@ export default function NavMenu(){
         <Link className="link" id="links" to="/profile" onClick={() => setMenuOpen(false)} >Profile  </Link>
         <Link className="link" id="links" to="/reflections" onClick={() => setMenuOpen(false)} >Reflections  </Link>
         <Link className="link" id="links" to="/subjects" onClick={() => setMenuOpen(false)} >Subjects  </Link>
+        <Link className="link" id="links" to="/contacts" onClick={() => setMenuOpen(false)} >Contact Us  </Link>
       </div>
     </nav>
     )
