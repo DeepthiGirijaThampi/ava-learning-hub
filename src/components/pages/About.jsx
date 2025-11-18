@@ -1,4 +1,5 @@
 import './about.css';
+import aboutImage from '../../assets/profile-pic.jpg';
 export default function About(){
     return(
         <main className='about-page' >
@@ -12,6 +13,9 @@ export default function About(){
              <p>
               Current features include tracking subjects, units, reflections, and more. Stay tuned for future enhancements!
              </p>
+            </section>
+            <section className='about-right'>
+            <img className='about-picture' src={aboutImage} alt="Deepthi's picture" />
             </section>
         </main>
     )

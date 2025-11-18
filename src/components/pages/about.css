@@ -9,7 +9,7 @@
   }
   .about-page {
     position: relative;
-    background-image: url('../../assets/books-one.jpg'); 
+    background-image: url('../../assets/colors.jpg'); 
     background-size: cover;
     background-position: center;
     color:var(--white-color);
@@ -33,4 +33,47 @@
     font-size: 1.5rem;
     line-height: 2;
     margin: 0 auto;
+  }
+  .about-picture{
+    width:400px;
+    border: var(--primary-color-darker-green) solid 10px;
+    margin-right: 100px
+   }
+
+   @media screen and (max-width: 1366px) {
+    .about-page {
+      padding: 2rem;
+    }
+  
+    .about-section {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      max-width: 600px;
+    }
+  
+    .about-picture {
+      width: 350px;
+      margin-right: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-page {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  
+    .about-section {
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 100%;
+    }
+  
+    .about-picture {
+      width: 90%;
+      margin: 0 auto;
+      border-width: 6px;
+    }
   }
