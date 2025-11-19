@@ -7,7 +7,7 @@
 }
 .page-container{
     border: 1px solid #ccc;
-    color: purple;
+    color: #7BA05B;
     padding: 1rem;
     
     text-align: center;
@@ -41,8 +41,8 @@
   }
 .reflections-form select:focus,.reflections-form textarea:focus {
     outline: none;
-    border-color: #6a1b9a;
-    box-shadow: 0 0 5px rgba(106, 27, 154, 0.4);
+    border-color: #7BA05B; 
+    box-shadow: 0 0 5px #7BA05B;
 }
 
 @media screen and (max-width: 1366px) {

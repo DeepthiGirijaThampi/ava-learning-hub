@@ -10,7 +10,7 @@
     margin: 1rem;
     font-size: 1.1rem;
     font-weight: 500;
-    color: #111827; 
+    color: #7BA05B; 
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease;
   }
@@ -22,14 +22,14 @@
   }
 
   .get-started-button{
-    background-color: #f3f4f6; 
-    border: 2px solid #d1d5db; 
+    background-color: #7BA05B;
+    border: 2px solid #ccd5ae;
     border-radius: 12px;
     padding: 1rem 1.5rem;
     margin: 1rem;
     font-size: 1.1rem;
     font-weight: 500;
-    color: purple;
+    color: #f3f4f6;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.754);
     transition: transform 0.2s ease;
   }

@@ -1,10 +1,20 @@
 :root {
-    --primary-color:purple;
+    /* --primary-color:purple;
     --primary-color-green : #91c7b1;
     --primary-color-darker-green : #294D3F;
     --text-color: #444;
     --green:rgb(39, 124, 34);
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  --primary-color:#3a5a40;
+  --primary-color-green : #91c7b1;
+  --sage-green :#7BA05B;
+  --green-one:#ccd5ae;
+  --green-two:#e9edc9;
+  --green-three:#57cc99;
+  --primary-color-darker-green : #294D3F;
+  --text-color: #444;
+  --green:rgb(39, 124, 34);
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   
@@ -44,12 +54,12 @@
   }
   
   .nav-menu .link {
-    color: var(--primary-color);
+    color: var(--sage-green);
     transition: color 0.3s ease;
   }
   
   .nav-menu .link:hover {
-    color: rgb(99, 37, 161);
+    color: var(--primary-color)
   }
   /* Always hide the hamburger on normal screens by default */
   .hamburger {
@@ -108,11 +118,11 @@
         font-size: x-small;
        }
   
-      .hamburger {
+    .hamburger {
         display: block; 
       }
       /* Always hide the menu-links on small screens by default */
-      .menu-links {
+    .menu-links {
         display: none;
         flex-direction: column;
         align-items: center;

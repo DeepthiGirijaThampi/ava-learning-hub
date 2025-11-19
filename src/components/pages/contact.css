@@ -1,4 +1,4 @@
-/* Contacts.css */
+
 .contact {
     /* min-height: 100vh; */
     display: flex;
@@ -21,7 +21,7 @@
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: #333;
+    color:  #7BA05B;
   }
   
   input,
@@ -40,8 +40,8 @@
   input:focus,
   textarea:focus {
     outline: none;
-    border-color: #6a1b9a;
-    box-shadow: 0 0 0 2px rgba(106, 27, 154, 0.2);
+    border-color: #7BA05B;
+    box-shadow: 0 0 0 2px #bdc899;
   }
 
   .thankyou {

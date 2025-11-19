@@ -4,14 +4,15 @@
 }
 
 .page-heading{
-    color:purple;
+    color:#3a5a40;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px #7BA05B;
 }
 
 .add-btn{
-    background-color: purple;
+    background-color: #7BA05B;
     color: white;
     padding: 0.6rem 1.2rem;
     border: none;
@@ -19,10 +20,11 @@
     font-size: 1rem;
     cursor: pointer;
     margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(17, 16, 16, 0.932);
 }
 
 .link {
-    color: #6a1b9a;
+    color: #7BA05B;
     font-size: larger;
     text-decoration: none;
     font-weight: bold;
@@ -54,8 +56,8 @@
 
 .subject-form input:focus,.subject-form textarea:focus {
   outline: none;
-  border-color: #6a1b9a;
-  box-shadow: 0 0 5px rgba(106, 27, 154, 0.4);
+  border-color:  #7BA05B;
+  box-shadow: 0 0 5px #bdc899;
 }
 
 /* the subject card */
@@ -69,7 +71,7 @@
   
   .subject-card {
     border: 10px solid #ccc;
-    color: purple;
+    color: #7BA05B;
     padding: 1rem;
     width: 200px;
     text-align: center;

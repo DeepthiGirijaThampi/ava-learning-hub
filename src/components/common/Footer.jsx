@@ -3,7 +3,7 @@ export default function Footer(){
     return(
         <footer>
         
-           <div style={{color:"purple"}}>&copy; {thisYear} Ava's Learning Hub private limited</div>
+           <div style={{color:"#3a5a40"}}>&copy; {thisYear} Ava's Learning Hub private limited</div>
         </footer>
     )
 }

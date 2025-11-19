@@ -35,15 +35,19 @@ export default function Contacts(){
       }, [submitted]);
     //rendering
     return(
-        <main className="contact">
+        <main className="contact ">
+         <div>
+     
+            <h1 className="page-heading">Contact Us</h1>
+    
             <form onSubmit={handleFormSubmit}>
             <label>Name </label><input
-             type="text" name="name" 
-             value={contactData.name} 
-             onChange={handleChange} 
-             className="contact-name" 
-             required
-             />
+            type="text" name="name" 
+            value={contactData.name} 
+            onChange={handleChange} 
+            className="contact-name" 
+            required
+            />
             <label>Email </label><input 
             type="email" 
             name="email" 
@@ -60,16 +64,15 @@ export default function Contacts(){
             onChange={handleChange} 
             className="contact-message" 
             required
-             ></textarea>
+            ></textarea>
             <CustomButton text = "Submit" type="submit" />
             </form>
-           
             {
                 submitted && (
                     <p className="thankyou">Thank you for your response</p>
                 )
             }
-       
+        </div>
         </main>
     )
 }

@@ -31,12 +31,12 @@ export default function Profile(){
  
       
         <main>
-        <h1 id="profile-header">Profile Page</h1>
+        <h1 id="profile-header">My Profile</h1>
       
         <div className="profile-wrapper">
          <section className="profile-left">
          <img src="/src/assets/Cartoonify.png" alt="Ava's Avatar" className='avatar-img' />
-         <h2 style={{color:"purple"}}>Avanthika Nair</h2>
+         <h2 style={{color:"#7BA05B"}}>Avanthika Nair</h2>
          <table className="profile-info-table">
             <tbody>
                 <tr>
@@ -53,7 +53,7 @@ export default function Profile(){
                 </tr>
             </tbody>
          </table>
-          <p className='welcome-ptag' style={{color:"purple"}}>
+          <p className='welcome-ptag' >
             Welcome back, Ava! Great progress so far!! 🎉 Here's a quick summary of your learning journey.
           </p>
          </section>
@@ -62,18 +62,18 @@ export default function Profile(){
              {/* Progress bars for each subject */}
          {subjectProgress.map((subject, index) => (
          <div className='progress-container-div' key={index} style={{ marginBottom: "2rem" }}>
-            <h3 className='subject-name-header' style={{color:"purple"}}>{subject.name}</h3>
+            <h3 className='subject-name-header'style={{color:"#7BA05B"}}>{subject.name}</h3>
                 <div className='progress-bar-div'>
                 <div className='progress-percentage-div'
                 style={{
                 height: "100%",
                 width: `${subject.progress}%`,
-                backgroundColor: "mediumorchid",
+                backgroundColor: "#7BA05B",
                 transition: "width 0.5s ease-in-out",
                  }}
                 ></div>
                 </div>
-          <p style={{ marginTop: "0.5rem" , color:"purple"}} className='progress-percentage-ptag'>{subject.progress}% complete</p>
+          <p style={{ marginTop: "0.5rem" , color:"#7BA05B"}} className='progress-percentage-ptag'>{subject.progress}% complete</p>
         </div>
         ))}
          </section>

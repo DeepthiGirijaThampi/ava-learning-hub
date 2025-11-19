@@ -1,7 +1,17 @@
 :root{
---white-color: #fdf5f5;
---shading-color :rgba(0, 0, 0, 0.849);
-}
+  --white-color: #fdf5f5;
+  --shading-color :rgba(0, 0, 0, 0.849);
+  --primary-color:#3a5a40;
+  --primary-color-green : #91c7b1;
+  --sage-green :#7BA05B;
+  --green-one:#ccd5ae;
+  --green-two:#e9edc9;
+  --green-three:#57cc99;
+  --primary-color-darker-green : #294D3F;
+  --text-color: #444;
+  --green:rgb(39, 124, 34);
+  --pink:#7b3771;
+  }
 
   .about-page h2 {
     color:var(--white-color);
@@ -9,7 +19,7 @@
   }
   .about-page {
     position: relative;
-    background-image: url('../../assets/colors.jpg'); 
+    background-image: url('../../assets/background-seven.jpg'); 
     background-size: cover;
     background-position: center;
     color:var(--white-color);
@@ -18,12 +28,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* text-align: center;
-    padding: 2rem;
-    max-width: 700px;
-    line-height: 2;
-    font-size: 1.1rem;
-    margin: 0 auto; */
   }
 
   .about-section{
@@ -36,7 +40,7 @@
   }
   .about-picture{
     width:400px;
-    border: var(--primary-color-darker-green) solid 10px;
+    border: var(--pink) solid 10px;
     margin-right: 100px
    }
 

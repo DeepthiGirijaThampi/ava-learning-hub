@@ -53,7 +53,7 @@ export default function Reflections(){
     return(
       
         <main className="page-container">
-        <h1 className="page-heading">Reflections Page</h1>
+        <h1 className="page-heading">Reflections</h1>
         <p style={{textAlign:"center"}}>
             Write your thoughts about what you learned today ✍
         </p>
