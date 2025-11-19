@@ -38,6 +38,7 @@ export default function Subjects(){
      
     
         <main className="page-container">
+        
              <h1 className="page-heading" style={{display:"flex",justifyContent:"center"}}> Subjects </h1>
              {/* Step 1: Add Subject Button */}
              {/* <div style={{ textAlign: "center", margin: "1rem" }}>
@@ -77,6 +78,7 @@ export default function Subjects(){
                     ))
                 )}
             </div>
+          
         </main>
      
     )

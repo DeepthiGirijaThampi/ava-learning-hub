@@ -1,15 +1,38 @@
 .reflection-display{
-    margin-top: 1rem;
-    width: 300px;
-    border: 15px solid var(--primary-color-green);
-    padding: 50px;
-    margin: 20px;
+  width: 300px;
+  border: none;
+  border-radius: 50px;
+  overflow: hidden; 
+  margin: 20px;
+  background-color: #e1edd69e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.626);
+    
+}
+.h3-div{
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.reflect-div{
+  background-color: #7ba05b1d;
+  padding: 1rem;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  backdrop-filter: blur(2px); 
+}
+.h3-div,
+.reflect-div {
+  margin: 0;
+  border: none;
+}
+.reflect-p{
+  /* margin: 0px; */ 
+   margin: 0.5rem 0;
+ 
 }
 .page-container{
     border: 1px solid #ccc;
     color: #7BA05B;
     padding: 1rem;
-    
     text-align: center;
     border-radius: 8px;
     background-color: #f8f8f8;
@@ -45,22 +68,31 @@
     box-shadow: 0 0 5px #7BA05B;
 }
 
+
 @media screen and (max-width: 1366px) {
     .reflection-display {
       width: 250px;
-      padding: 30px;
-      border-width: 12px;
+      padding: 0px;
+      /* border-width: 12px; */
     }
     .reflections-form {
       padding: 1.5rem;
       max-width: 90%;
+    }
+    .h3-div{
+      background-color: rgba(255, 255, 255, 0.4);
+      height: 35%;
+      margin: 0px;
+    }
+    .h3-sub{
+      padding-top: 20px;
     }
   }
   
   @media screen and (max-width: 768px) {
     .reflection-display {
       width: 80%;
-      padding: 1rem;
+      padding: 0rem;
       margin: 10px auto;
     }
     .reflections-container {

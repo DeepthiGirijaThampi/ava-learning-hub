@@ -1,18 +1,13 @@
 import './profile.css'
 export default function Profile(){
-    //Placeholder for subject progress data 
-    const subjects = [
-        {name : "Math", progress: 50},
-        {name : "Science", progress: 70},
-        {name : "Reading", progress: 85}
-    ];
-     // Get subjects from localStorage (localStorage.getItem('subjects'))
-     const storedSubjects = JSON.parse(localStorage.getItem('subjects'))||[];
-     console.log("Stored Subjects - Profile Page:", storedSubjects);
+   
+    // Get subjects from localStorage (localStorage.getItem('subjects'))
+        const storedSubjects = JSON.parse(localStorage.getItem('subjects'))||[];
+        console.log("Stored Subjects - Profile Page:", storedSubjects);
 	// 	Get units from localStorage for each subject
     //count total units and completed ones 
     //show in progress bar
-    const subjectProgress = storedSubjects.map( (subject)=>{
+        const subjectProgress = storedSubjects.map( (subject)=>{
         const units = JSON.parse(localStorage.getItem(`units-${subject.id}`))||[];
         console.log("Units-> Profile page",units)
         const total = units.length;
@@ -60,8 +55,14 @@ export default function Profile(){
          <div className="vertical-divider"></div>
          <section className="profile-right">
              {/* Progress bars for each subject */}
-         {subjectProgress.map((subject, index) => (
-         <div className='progress-container-div' key={index} style={{ marginBottom: "2rem" }}>
+         {subjectProgress.length === 0 ? (
+          <h2 style={{ color: "#7BA05B", fontStyle: "italic", textAlign: "center" }}>
+             <strong> <em> No subjects to display yet. Add a subject to get started!</em></strong> 
+          </h2>
+          ) : 
+          (
+            subjectProgress.map((subject, index) => (
+            <div className='progress-container-div' key={index} style={{ marginBottom: "2rem" }}>
             <h3 className='subject-name-header'style={{color:"#7BA05B"}}>{subject.name}</h3>
                 <div className='progress-bar-div'>
                 <div className='progress-percentage-div'
@@ -70,18 +71,14 @@ export default function Profile(){
                 width: `${subject.progress}%`,
                 backgroundColor: "#7BA05B",
                 transition: "width 0.5s ease-in-out",
-                 }}
+                    }}
                 ></div>
                 </div>
-          <p style={{ marginTop: "0.5rem" , color:"#7BA05B"}} className='progress-percentage-ptag'>{subject.progress}% complete</p>
-        </div>
-        ))}
+            <p style={{ marginTop: "0.5rem" , color:"#7BA05B"}} className='progress-percentage-ptag'>{subject.progress}% complete</p>
+            </div>
+         )))}
          </section>
         </div>
-
-         
-
-       
         </main>
   
     )

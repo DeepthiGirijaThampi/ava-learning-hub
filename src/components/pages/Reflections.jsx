@@ -98,10 +98,16 @@ export default function Reflections(){
         :
         (reflections.map((reflection)=>(
         <div className="reflection-display" key={reflection.id}>
-            <h3>{reflection.subject}</h3>
-            <p>{reflection.text}</p>
+          
+            <div className="h3-div">
+            <h3 className="h3-sub">{reflection.subject}</h3>
+            </div>
+            <div className="reflect-div">
+            <p className="reflect-p">{reflection.text}</p>
             <small>{reflection.date}</small><br></br>
-            <CustomButton text="Delete" onClick={()=>handleDeleteReflection(reflection.id)}/>
+            <br></br>
+            <CustomButton className="btn" text="Delete" onClick={()=>handleDeleteReflection(reflection.id)}/>
+            </div>
         </div>
         )))}
       </div> 

@@ -1,6 +1,7 @@
 .page-container{
-    padding:2rem;
-    text-align: center;
+  padding:2rem;
+  text-align: center;
+  
 }
 
 .page-heading{
@@ -41,9 +42,10 @@
     margin: 2rem auto;
     padding: 2rem;
     border-radius: 12px;
-    background-color:  #f8f8f8;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.625);
   }
+
+
   .subject-form input,.subject-form textarea {
   width: 100%;
   padding: 0.75rem;
@@ -70,15 +72,20 @@
   }
   
   .subject-card {
-    border: 10px solid #ccc;
+    /* border: 2px solid #ccc; */
     color: #7BA05B;
     padding: 1rem;
     width: 200px;
     text-align: center;
-    border-radius: 8px;
-    background-color: #f8f8f8;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.625);
+    background-color: #e1edd69e;
+    /* background-color: #f8f8f8; */
   }
-
+  /* .subject-card h3{
+    background-color: #bdc89991;
+    padding: 1rem;
+  } */
   @media screen and (max-width: 1366px) {
     .subject-card {
       width: 250px;

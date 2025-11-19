@@ -143,10 +143,11 @@ return (
     <div>
     <input
         type="text"
-        placeholder="Unit name (optional)"
+        placeholder="Unit name"
         value={unitName}
         onChange={(e) => setUnitName(e.target.value)}
         style={{ padding: '0.5rem', width: '250px', marginBottom: '0.5rem' }}
+        required
         />
     </div>
     <div>
@@ -156,7 +157,6 @@ return (
         onChange={(e) => setUnitDescription(e.target.value)}
         rows="3"
         style={{ padding: '0.5rem', width: '250px' }}
-        required
     />
     </div>
     <CustomButton text="Save Unit" type="submit" />
