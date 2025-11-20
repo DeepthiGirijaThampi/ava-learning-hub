@@ -18,7 +18,7 @@ export default function Subjects(){
     useEffect(()=>{
         localStorage.setItem('subjects',JSON.stringify(subjects))
     },[subjects]);
-    function handleAddSubject(e){
+    const handleAddSubject =(e)=>{
         e.preventDefault(); //prevent reaload
         console.log("Added subject"); //needs to be removed
         //create dummy subject for now with an object then set the setSubject with subjects

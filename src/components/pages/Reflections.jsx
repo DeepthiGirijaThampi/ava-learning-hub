@@ -30,7 +30,7 @@ export default function Reflections(){
     },[reflections])
 
     //function handleAddReflections
-    function handleAddReflections(e){
+    const handleAddReflections = (e)=>{
         console.log("Added Reflections");
         e.preventDefault();
         const newReflection = {
