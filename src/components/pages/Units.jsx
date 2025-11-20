@@ -122,19 +122,21 @@ return (
     )}
 
     {/* Step 3: Real Add Unit button */}
-    {unitLimit && (
+    {unitLimit && units.length < unitLimit && (
         <div style={{ textAlign: 'center', margin: '1rem' }}>
         <CustomButton
-            text={units.length >= unitLimit ? "Limit reached" : "Add Units"}
+            // text={units.length >= unitLimit ? "Limit reached" : "Add Units"}
+            text="Add Units"
             onClick={handleAddUnits}
             disabled={units.length >= unitLimit}
         />
         </div>
     )}
-    {/* Show message instead of alert */}
-    {unitLimit !== null && units.length >= unitLimit && (
+    {/* Show message */}
+    {/* {unitLimit !== null && units.length >= unitLimit && (
         <p style={{ textAlign: 'center', color: 'red' }}>✅ Unit limit reached!</p>
-      )}
+        
+      )} */}
   
     {/* on clicking the real Add units generate the form and save it */}
     {showUnitForm && (
