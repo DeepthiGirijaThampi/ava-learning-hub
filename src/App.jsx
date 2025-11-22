@@ -11,10 +11,9 @@ import Contacts from "./components/pages/Contacts";
 import './App.css'
 function App() {
   
-
   return (
     <div className="App">
-    <Header></Header>
+      <Header></Header>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>

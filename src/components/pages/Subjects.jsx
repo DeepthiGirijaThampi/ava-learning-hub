@@ -2,6 +2,7 @@ import CustomButton from "../common/CustomButton";
 import './learning.css';
 import { useEffect, useState } from "react";
 import SubjectCard from "../common/SubjectCard";
+//Subjects component handles the creation and display of subjects
 export default function Subjects(){
     //load the subjects from local storage 
     const loadSubjects = ()=>{
@@ -9,25 +10,28 @@ export default function Subjects(){
         return saved ? JSON.parse(saved) : [];
     }
 
-
-    //add useState for setting subjects 
-    const [subjects,setSubjects] = useState(loadSubjects); // subjects info
-    const [subjectName,setSubjectName] = useState("") // subject name
-    const [subjectDescription,setSubjectDescription] = useState("") //subject description
-
+    // useState for setting list of subjects 
+    const [subjects,setSubjects] = useState(loadSubjects); 
+    // useState for subject name
+    const [subjectName,setSubjectName] = useState("") 
+    //usestate for subject description
+    const [subjectDescription,setSubjectDescription] = useState("") 
+    // useEffect to update localStorage whenever the subjects state changes
     useEffect(()=>{
         localStorage.setItem('subjects',JSON.stringify(subjects))
     },[subjects]);
+    // Handle form submission to add a new subject
     const handleAddSubject =(e)=>{
-        e.preventDefault(); //prevent reaload
-        console.log("Added subject"); //needs to be removed
-        //create dummy subject for now with an object then set the setSubject with subjects
+        //prevent reaload
+        e.preventDefault(); 
+        //create a new subject object 
         const newSubject = {
             id: Date.now(),
             name: subjectName,
             description: subjectDescription
         };
 
+        // Update the subjects state with the new subject
         setSubjects([...subjects,newSubject]);
         setSubjectName("");
         setSubjectDescription("");
@@ -38,17 +42,10 @@ export default function Subjects(){
      
     
         <main className="page-container">
-        
-             <h1 className="page-heading" style={{display:"flex",justifyContent:"center"}}> Subjects </h1>
-             {/* Step 1: Add Subject Button */}
-             {/* <div style={{ textAlign: "center", margin: "1rem" }}>
-              <CustomButton text={"Add Subject"} onClick={handleAddSubject}/>
-              
-             </div> */}
-             <form onSubmit={handleAddSubject} className="subject-form">
-               {/* <label>Subject Name </label> */}
+            <h1 className="page-heading" style={{display:"flex",justifyContent:"center"}}> Subjects </h1>
+            {/* Form for adding a new subject */}
+            <form onSubmit={handleAddSubject} className="subject-form">
                 <input 
-                   
                     value={subjectName}
                     onChange={(e)=> setSubjectName(e.target.value)}
                     placeholder="Subject Name"
@@ -62,23 +59,20 @@ export default function Subjects(){
                     required
                 /> <br/><br/>
                 <CustomButton text={"Add Subject"} type="submit" />
-             </form>
-
-            
-             
-        
+            </form>
+        {/* Display all added subjects or a fallback message */}
             <div className="subjects-container">
-                {subjects.length === 0 ?(
-                    <p style={{ textAlign: "center", color: "gray" }} >No subjects added yet.</p>
-                ):(
-                    subjects.map((subject)=>(
+            {subjects.length === 0 ?(
+                <p style={{ textAlign: "center", color: "gray" }} >No subjects added yet.</p>
+            ):(
+                subjects.map((subject)=>(
 
-                        <SubjectCard key={subject.id} subject={subject}/>
-                        
-                    ))
-                )}
+                    <SubjectCard key={subject.id} subject={subject}/>
+                    
+                ))
+            )}
             </div>
-          
+        
         </main>
      
     )
