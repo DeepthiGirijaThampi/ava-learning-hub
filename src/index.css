@@ -37,7 +37,23 @@ button:hover {
   background-color: var(--green);
   color: white;
 }
-  
+.main-heading{
+  font-family: var(--font-family);
+  font-weight: 700; 
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  color: var(--primary-color-darker-green);
+  text-shadow: 2px 4px 3px rgba(126, 133, 119, 0.971);
+}
+footer{
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  border-top: 2px solid rgba(128, 128, 128, 0.223);
+  padding: 1rem 0;
+}
 .nav-menu {
   display: flex;
   justify-content: center;
@@ -98,6 +114,7 @@ button:hover {
 
   .main-heading{
     display: flex;
+    padding-bottom: 0px;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
