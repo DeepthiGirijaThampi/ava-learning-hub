@@ -26,21 +26,21 @@ export default function Profile(){
                  {/* Left section: User avatar and personal info */}
                 <section className="profile-left">
                     <img src="/src/assets/Cartoonify.png" alt="Ava's Avatar" className='avatar-img' />
-                    <h2 style={{color:"#7BA05B"}}>Avanthika Nair</h2>
+                    <h2 >Avanthika Nair</h2>
                     {/* table to display info */}
                     <table className="profile-info-table">
                     <tbody>
                         <tr>
                             <td><strong>Email : </strong></td>
-                            <td>avanthika@gmail.com</td>
+                            <td><strong>avanthika@gmail.com</strong></td>
                         </tr>
                         <tr>
                             <td><strong>Grade :</strong></td>
-                            <td>7th Grade</td>
+                            <td><strong>7th Grade</strong></td>
                         </tr>
                         <tr>
                             <td><strong>School :</strong></td>
-                            <td>Fort Zumwalt WMS</td>
+                            <td><strong>Fort Zumwalt WMS</strong></td>
                         </tr>
                     </tbody>
                     </table>

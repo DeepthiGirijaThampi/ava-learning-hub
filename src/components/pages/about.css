@@ -11,6 +11,7 @@
   --text-color: #444;
   --green:rgb(39, 124, 34);
   --pink:#7b3771;
+  --pink-two: #de67a6;
 }
 
 .about-page h2 {
@@ -40,7 +41,7 @@
 }
 .about-picture{
   width:400px;
-  border: var(--pink) solid 10px;
+  border: var(--pink-two) solid 10px;
   margin-right: 100px
   }
 

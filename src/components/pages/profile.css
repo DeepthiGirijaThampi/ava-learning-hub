@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
 }
-
 #profile-header {
   color: #3a5a40;
   text-align: center;
@@ -53,7 +52,8 @@
 }
 .profile-left h2 {
   font-size: 1.8rem;
-  text-shadow: 1px 1px lavender;
+  color:#7BA05B;
+  text-shadow: 3px 4px 3px rgba(142, 145, 139, 0.388);
 }
 .profile-right {
   display: flex;
@@ -67,6 +67,7 @@
   width: 100%;
   margin-top: 1rem;
   color: #7BA05B;
+  text-shadow: 2px 4px 3px rgba(126, 133, 119, 0.293);
   font-style: italic;
   font-size: 1.2rem;
   font-weight: 600;

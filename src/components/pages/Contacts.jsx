@@ -47,31 +47,31 @@ export default function Contacts(){
         
                 <h1 className="page-heading">Contact Us</h1>
                 <form onSubmit={handleFormSubmit}>
-                <label>Name </label><input
-                type="text" name="name" 
-                value={contactData.name} 
-                onChange={handleChange} 
-                className="contact-name" 
-                required
-                />
-                <label>Email </label><input 
-                type="email" 
-                name="email" 
-                value={contactData.email} 
-                onChange={handleChange} 
-                className="contact-email" 
-                required
-                />
-                <label>Message:</label>
-                <textarea 
-                name="message" 
-                rows={4}
-                value={contactData.message} 
-                onChange={handleChange} 
-                className="contact-message" 
-                required
-                ></textarea>
-                <CustomButton text = "Submit" type="submit" />
+                    <label>Name </label><input
+                    type="text" name="name" 
+                    value={contactData.name} 
+                    onChange={handleChange} 
+                    className="contact-name" 
+                    required
+                    />
+                    <label>Email </label><input 
+                    type="email" 
+                    name="email" 
+                    value={contactData.email} 
+                    onChange={handleChange} 
+                    className="contact-email" 
+                    required
+                    />
+                    <label>Message:</label>
+                    <textarea 
+                    name="message" 
+                    rows={4}
+                    value={contactData.message} 
+                    onChange={handleChange} 
+                    className="contact-message" 
+                    required
+                    ></textarea>
+                    <CustomButton text = "Submit" type="submit" />
                 </form>
                 {
                     submitted && (

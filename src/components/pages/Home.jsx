@@ -13,7 +13,7 @@ export default function Home(){
         <main className="home-page">
             <div className="welcome">
                 <h1 style={{display:"flex",justifyContent:"center",color:"#3a5a40"}}>Welcome to Ava’s Learning Hub</h1>
-                <p style={{display:"flex",justifyContent:"center", color:"#7BA05B"}}><em>Your personal space to explore, reflect, and grow 🌱</em></p>
+                <p style={{display:"flex",justifyContent:"center", color:"#7BA05B"}}><strong><em>Your personal space to explore, reflect, and grow 🌱</em></strong></p>
             </div>
             <section className="features">
                 <Link to={"/subjects"}><div className="feature-card">📚 Track Subjects</div></Link>

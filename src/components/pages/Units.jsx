@@ -102,18 +102,18 @@ return (
             {showLimitInput && (
                 <div className="add-units-form">
                 <form onSubmit={handleLimitSubmit} >
-                <label>
-                    How many units?{' '}
-                    <input
-                    type="number"
-                    value={inputValue}
-                    onChange={(e) => setInputValue(e.target.value)}
-                    min="1"
-                    style={{ width: '60px', marginRight: '10px' }}
-                    />
-                </label>
-                <CustomButton text="Confirm" type="submit" />
-                {error && <p style={{ color: 'red' }}>{error}</p>}
+                    <label>
+                        How many units?{' '}
+                        <input
+                        type="number"
+                        value={inputValue}
+                        onChange={(e) => setInputValue(e.target.value)}
+                        min="1"
+                        style={{ width: '60px', marginRight: '10px' }}
+                        />
+                    </label>
+                    <CustomButton text="Confirm" type="submit" />
+                    {error && <p style={{ color: 'red' }}>{error}</p>}
                 </form>
                 </div>
             )}
