@@ -31,6 +31,11 @@
   justify-content: center;
 }
 
+.about-page p{
+  margin-bottom: 0.5rem;
+  line-height: 2.4;
+}
+
 .about-section{
   max-width: 500px;
   width: 100%;
@@ -39,6 +44,7 @@
   line-height: 2;
   margin: 0 auto;
 }
+
 .about-picture{
   width:400px;
   border: var(--pink-two) solid 10px;
@@ -58,6 +64,7 @@
 
   .about-picture {
     width: 350px;
+    margin-left: 20px;
     margin-right: 60px;
   }
 }
@@ -77,8 +84,12 @@
   }
 
   .about-picture {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     border-width: 6px;
+  }
+  .about-page p {
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
   }
 }
