@@ -25,7 +25,7 @@ export default function Profile(){
             <div className="profile-wrapper">
                  {/* Left section: User avatar and personal info */}
                 <section className="profile-left">
-                    <img src="/src/assets/Cartoonify.png" alt="Ava's Avatar" className='avatar-img' />
+                    <img src="/src/assets/ava.png" alt="Ava's Avatar" className='avatar-img' />
                     <h2 >Avanthika Nair</h2>
                     {/* table to display info */}
                     <table className="profile-info-table">
