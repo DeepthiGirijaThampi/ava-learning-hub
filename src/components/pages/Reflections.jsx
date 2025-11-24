@@ -30,7 +30,7 @@ export default function Reflections(){
         localStorage.setItem('reflections',JSON.stringify(reflections));
     },[reflections])
 
-    //function  handleAddReflections to add new reflections
+    //handler function  handleAddReflections to add new reflections
     const handleAddReflections = (e)=>{
         console.log("Added Reflections");
         e.preventDefault();
