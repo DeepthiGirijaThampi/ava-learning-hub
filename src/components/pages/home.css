@@ -1,5 +1,6 @@
 .feature-card {
   background-color: #f3f4f6; 
+  /* background-color: rgba(210, 223, 210, 0.517); */
   border: 2px solid #d1d5db;
   border-left: 8px solid #7ba05b76; 
   border-right:8px solid #7ba05b58;  

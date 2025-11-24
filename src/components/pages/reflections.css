@@ -7,6 +7,11 @@
   background-color: #e1edd69e;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.626); 
 }
+.reflection-display:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  background-color: var(--green-one);
+}
 .h3-div{
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.4);
@@ -46,7 +51,7 @@
   padding: 2rem;
   border-radius: 12px;
   background-color:  #f8f8f8;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.519);
 }
 .reflections-form  textarea , .reflections-form select{
   width: 100%;
@@ -63,6 +68,7 @@
   border-color: #7BA05B; 
   box-shadow: 0 0 5px #7BA05B;
 }
+
 /* animation  */
 @keyframes fadeIn {
   from {
@@ -78,6 +84,7 @@
 .reflection-display {
   animation: fadeIn 0.4s ease-in;
 }
+/* Media Queries */
 
 @media screen and (max-width: 1366px) {
   .reflection-display {
