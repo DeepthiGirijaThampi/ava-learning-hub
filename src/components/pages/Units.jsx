@@ -1,6 +1,6 @@
 import CustomButton from '../common/CustomButton';
 import './learning.css';
-import { useParams,useLocation } from 'react-router';
+import { useParams,useLocation, Link } from 'react-router';
 import { useEffect, useState } from 'react';
 import './units.css'
 //functional component for Units
@@ -187,9 +187,9 @@ return (
 
             {/* Link back to subjects */}
             <div style={{ textAlign: 'center', marginTop: '1rem' }}>
-                <a href="/subjects" className="link">
+                <Link to="/subjects" className="link">
                 ← Back to Subjects
-                </a>
+                </Link>
             </div>
         </main>
     );
